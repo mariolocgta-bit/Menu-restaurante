@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#ffebee"/>
+  <!-- Pizza -->
+  <ellipse cx="200" cy="150" rx="100" ry="35" fill="#f5deb3"/>
+  <ellipse cx="200" cy="145" rx="90" ry="30" fill="#c62828" opacity="0.8"/>
+  <!-- Queso -->
+  <ellipse cx="200" cy="142" rx="80" ry="25" fill="#fff59d" opacity="0.8"/>
+  <!-- Pepperoni -->
+  <circle cx="170" cy="135" r="12" fill="#8B0000"/>
+  <circle cx="220" cy="140" r="10" fill="#8B0000"/>
+  <circle cx="190" cy="150" r="11" fill="#8B0000"/>
+  <circle cx="240" cy="130" r="9" fill="#8B0000"/>
+  <circle cx="160" cy="150" r="10" fill="#8B0000"/>
+  <!-- Albahaca -->
+  <ellipse cx="200" cy="138" rx="8" ry="4" fill="#2e7d32" transform="rotate(-20 200 138)"/>
+  <ellipse cx="185" cy="145" rx="6" ry="3" fill="#2e7d32" transform="rotate(15 185 145)"/>
+  <!-- Texto -->
+  <text x="200" y="240" font-family="Georgia, serif" font-size="16" fill="#8B0000" text-anchor="middle">Pizza Margherita</text>
+  <text x="200" y="265" font-family="Arial, sans-serif" font-size="12" fill="#999" text-anchor="middle">Galeria 3 - 400x300</text>
+</svg>

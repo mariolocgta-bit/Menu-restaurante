@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff8a65;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffcc80;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#skyGrad)"/>
+  <!-- Sol -->
+  <circle cx="320" cy="80" r="40" fill="#ffeb3b" opacity="0.8"/>
+  <!-- Terraza -->
+  <rect x="0" y="180" width="400" height="120" fill="#8d6e63"/>
+  <!-- Barandal -->
+  <rect x="0" y="175" width="400" height="10" fill="#5d4037"/>
+  <rect x="30" y="140" width="8" height="45" fill="#5d4037"/>
+  <rect x="100" y="140" width="8" height="45" fill="#5d4037"/>
+  <rect x="170" y="140" width="8" height="45" fill="#5d4037"/>
+  <rect x="240" y="140" width="8" height="45" fill="#5d4037"/>
+  <rect x="310" y="140" width="8" height="45" fill="#5d4037"/>
+  <rect x="380" y="140" width="8" height="45" fill="#5d4037"/>
+  <!-- Mesas -->
+  <ellipse cx="100" cy="230" rx="40" ry="15" fill="#fff" opacity="0.9"/>
+  <ellipse cx="280" cy="240" rx="45" ry="18" fill="#fff" opacity="0.9"/>
+  <!-- Sillas -->
+  <rect x="55" y="210" width="15" height="25" rx="3" fill="#4e342e"/>
+  <rect x="130" y="210" width="15" height="25" rx="3" fill="#4e342e"/>
+  <rect x="235" y="220" width="15" height="25" rx="3" fill="#4e342e"/>
+  <rect x="310" y="220" width="15" height="25" rx="3" fill="#4e342e"/>
+  <!-- Texto -->
+  <text x="200" y="280" font-family="Georgia, serif" font-size="16" fill="#fff" text-anchor="middle">Terraza al Atardecer</text>
+</svg>

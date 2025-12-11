@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#efebe9"/>
+  <!-- Estante de vinos -->
+  <rect x="50" y="50" width="300" height="180" fill="#5d4037" rx="5"/>
+  <rect x="60" y="60" width="280" height="50" fill="#4e342e"/>
+  <rect x="60" y="120" width="280" height="50" fill="#4e342e"/>
+  <rect x="60" y="180" width="280" height="40" fill="#4e342e"/>
+  <!-- Botellas fila 1 -->
+  <rect x="80" y="70" width="20" height="35" rx="3" fill="#1a237e"/>
+  <rect x="110" y="70" width="20" height="35" rx="3" fill="#b71c1c"/>
+  <rect x="140" y="70" width="20" height="35" rx="3" fill="#1b5e20"/>
+  <rect x="170" y="70" width="20" height="35" rx="3" fill="#4a148c"/>
+  <rect x="200" y="70" width="20" height="35" rx="3" fill="#b71c1c"/>
+  <rect x="230" y="70" width="20" height="35" rx="3" fill="#1a237e"/>
+  <rect x="260" y="70" width="20" height="35" rx="3" fill="#b71c1c"/>
+  <rect x="290" y="70" width="20" height="35" rx="3" fill="#1b5e20"/>
+  <!-- Botellas fila 2 -->
+  <rect x="90" y="130" width="20" height="35" rx="3" fill="#b71c1c"/>
+  <rect x="120" y="130" width="20" height="35" rx="3" fill="#1a237e"/>
+  <rect x="150" y="130" width="20" height="35" rx="3" fill="#b71c1c"/>
+  <rect x="180" y="130" width="20" height="35" rx="3" fill="#1b5e20"/>
+  <rect x="210" y="130" width="20" height="35" rx="3" fill="#4a148c"/>
+  <rect x="240" y="130" width="20" height="35" rx="3" fill="#b71c1c"/>
+  <rect x="270" y="130" width="20" height="35" rx="3" fill="#1a237e"/>
+  <!-- Texto -->
+  <text x="200" y="260" font-family="Georgia, serif" font-size="16" fill="#8B0000" text-anchor="middle">Seleccion de Vinos</text>
+  <text x="200" y="285" font-family="Arial, sans-serif" font-size="12" fill="#999" text-anchor="middle">Galeria 4 - 400x300</text>
+</svg>
