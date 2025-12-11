@@ -1,55 +1,258 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>El buen sabor</title>
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Buen Sabor - Restaurante Italiano</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-   <img src ="ChatGPT Image 8 dic 2025, 09_09_49 a.m..png" width="500"/>
-    <h1>El buen sabor</h1>
-    <hr>
-    <img src="Recetas-Italianas.jpg" width="1000" />
-    <h2>El buen sabor</h2>
-    <h3>Si te gusta la comida italiana, este es el lugar perfecto para ti.</h3>
-    <form action="pagina4.html" method="get">
-        <input type="submit" value="Ver menu">
-    </form>
-    <hr>
-    <p>Este restaurante se fundo en 1900 por el Chef Mario Luisinni y desde entonces ha sido heredado de generación en generación</p>
-    <p>Una siglo despues el restaurante a crecido exponencialmente </p>
-    <img src ="ChatGPT Image 8 dic 2025, 09_55_24 a.m..png" width="400"/>
+    <!-- HEADER: Logo y navegación -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>El Buen Sabor</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#ubicacion">Ubicación</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <hr>
-    <h2> Menu </h2>
-    <h3>Entradas</h3>
-    <ul>
-        <li>Bruschetta $50 </li>
-        <p>La bruschetta es una entrada que consiste en rebanadas de pan tostado con ajo, tomate, albahaca y aceite de oliva</p>
-        <li>Caprese $60 </li>
-        <p>La ensalada caprese es una entrada hecha con rodajas de tomate, mozzarella fresca, albahaca y aceite de oliva</p>
-        <li>Calamari Fritti $70 </li>
-        <p>El calamari fritti es una entrada de calamares fritos servidos con salsa marinara</p>
-    </ul>
-    <h3>Platos principales</h3>
-    <ul>
-        <li>Lasagna $90 </li>
-        <p>La lasaña es un plato tradicional hecho con capas de pasta, carne, salsa de tomate y queso</p>
-        <li>Spaghetti Carbonara $85 </li>
-        <p>El spaghetti carbonara es un plato hecho con pasta, huevos, queso parmesano, panceta y pimienta negra</p>
-        <li>Risotto ai Funghi $95 </li>
-        <p>El risotto ai funghi es un plato cremoso hecho con arroz, setas y queso parmesano</p>
-        <li>Pizza $100 $150 $200 s/t </li>
-        <p>La pizza es un plato hecho con una base de masa cubierta con salsa de tomate, queso y diversos ingredientes</p>
+    <main>
+        <!-- HERO: Sección principal con imagen grande -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>Auténtica Cocina Italiana</h2>
+                <p class="hero-slogan">Tradición y sabor desde 1900</p>
+                <a href="#menu" class="btn btn-primary">Ver Menú</a>
+            </div>
+        </section>
 
-    </ul>
-    <h3>Postres</h3>
-    <ul>
-        <li>Tiramisu $40 </li>
-        <p>El tiramisú es un postre frío, famoso mundialmente, que se elabora en capas con bizcochos de soletilla</p>
-        <li>Panna Cotta $35 </li>
-        <p>La panna cotta es un postre hecho a base de nata, azúcar y gelatina</p>
-        <li>Cannoli $30 </li>
-        <p>El cannoli es un postre siciliano que consiste en una masa frita en forma de tubo rellena de una crema dulce</p>
-    </ul>
+        <!-- NOSOTROS: Historia del restaurante -->
+        <section id="nosotros" class="nosotros">
+            <div class="container">
+                <h2>Nuestra Historia</h2>
+                <div class="nosotros-content">
+                    <div class="nosotros-texto">
+                        <p>
+                            El Buen Sabor fue fundado en 1900 por el Chef Mario Luisinni,
+                            un inmigrante italiano que trajo consigo las recetas de su abuela
+                            desde Nápoles. Lo que comenzó como una pequeña trattoria familiar
+                            se ha convertido en un referente de la cocina italiana auténtica.
+                        </p>
+                        <p>
+                            Cuatro generaciones después, seguimos honrando las recetas
+                            originales mientras incorporamos técnicas modernas. Cada platillo
+                            es preparado con ingredientes frescos y el mismo amor que el
+                            Chef Luisinni ponía en cada creación.
+                        </p>
+                        <p>
+                            Hoy, bajo la dirección del Chef Alessandro Luisinni, bisnieto del
+                            fundador, El Buen Sabor continúa siendo el lugar donde las familias
+                            se reúnen para disfrutar de la verdadera esencia de Italia.
+                        </p>
+                    </div>
+                    <div class="nosotros-imagen">
+                        <!-- NOTA: Reemplaza con tu imagen real -->
+                        <img src="images/chef.jpg" alt="Chef Alessandro Luisinni en la cocina del restaurante">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENÚ: Platillos organizados por categoría -->
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2>Nuestro Menú</h2>
+
+                <!-- Entradas -->
+                <div class="menu-categoria">
+                    <h3>Entradas</h3>
+                    <div class="menu-items">
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Bruschetta</h4>
+                                <span class="precio">$50</span>
+                            </div>
+                            <p>Rebanadas de pan tostado con ajo, tomate fresco, albahaca y aceite de oliva extra virgen.</p>
+                        </article>
+
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Ensalada Caprese</h4>
+                                <span class="precio">$60</span>
+                            </div>
+                            <p>Rodajas de tomate, mozzarella fresca di bufala, albahaca y reducción de balsámico.</p>
+                        </article>
+
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Calamari Fritti</h4>
+                                <span class="precio">$70</span>
+                            </div>
+                            <p>Calamares frescos empanizados y fritos, servidos con salsa marinara casera.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Platos Principales -->
+                <div class="menu-categoria">
+                    <h3>Platos Principales</h3>
+                    <div class="menu-items">
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Lasagna della Nonna</h4>
+                                <span class="precio">$90</span>
+                            </div>
+                            <p>Receta tradicional con capas de pasta fresca, ragú de carne, bechamel y parmesano gratinado.</p>
+                        </article>
+
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Spaghetti Carbonara</h4>
+                                <span class="precio">$85</span>
+                            </div>
+                            <p>Pasta al dente con salsa cremosa de huevo, queso pecorino, guanciale y pimienta negra.</p>
+                        </article>
+
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Risotto ai Funghi</h4>
+                                <span class="precio">$95</span>
+                            </div>
+                            <p>Arroz arborio cremoso con mezcla de setas silvestres, mantequilla y parmigiano reggiano.</p>
+                        </article>
+
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Pizza Margherita</h4>
+                                <span class="precio">$100 - $200</span>
+                            </div>
+                            <p>Masa artesanal horneada en horno de leña, salsa de tomate San Marzano, mozzarella y albahaca fresca.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Postres -->
+                <div class="menu-categoria">
+                    <h3>Postres</h3>
+                    <div class="menu-items">
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Tiramisú</h4>
+                                <span class="precio">$40</span>
+                            </div>
+                            <p>Clásico postre con capas de bizcocho savoiardi, café espresso, mascarpone y cacao.</p>
+                        </article>
+
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Panna Cotta</h4>
+                                <span class="precio">$35</span>
+                            </div>
+                            <p>Cremoso postre de nata italiana con coulis de frutos rojos de temporada.</p>
+                        </article>
+
+                        <article class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Cannoli Siciliani</h4>
+                                <span class="precio">$30</span>
+                            </div>
+                            <p>Masa crujiente rellena de ricotta dulce con chips de chocolate y pistache.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA: Fotos del restaurante -->
+        <section id="galeria" class="galeria">
+            <div class="container">
+                <h2>Galería</h2>
+                <div class="galeria-grid">
+                    <!-- NOTA: Reemplaza con tus imágenes reales -->
+                    <img src="images/galeria-1.jpg" alt="Interior elegante del restaurante con mesas preparadas">
+                    <img src="images/galeria-2.jpg" alt="Plato de pasta carbonara recién servido">
+                    <img src="images/galeria-3.jpg" alt="Pizza margherita saliendo del horno de leña">
+                    <img src="images/galeria-4.jpg" alt="Barra del restaurante con vinos italianos">
+                    <img src="images/galeria-5.jpg" alt="Postre tiramisú decorado con cacao">
+                    <img src="images/galeria-6.jpg" alt="Terraza exterior del restaurante al atardecer">
+                </div>
+            </div>
+        </section>
+
+        <!-- UBICACIÓN: Dirección, horarios y mapa -->
+        <section id="ubicacion" class="ubicacion">
+            <div class="container">
+                <h2>Ubicación y Horarios</h2>
+                <div class="ubicacion-content">
+                    <div class="ubicacion-info">
+                        <div class="info-item">
+                            <h3>Dirección</h3>
+                            <p>Av. Insurgentes Sur 1234</p>
+                            <p>Col. Del Valle, Ciudad de México</p>
+                            <p>CP 03100</p>
+                        </div>
+
+                        <div class="info-item">
+                            <h3>Horarios</h3>
+                            <ul class="horarios-lista">
+                                <li><span>Lunes a Jueves:</span> 1:00 PM - 10:00 PM</li>
+                                <li><span>Viernes y Sábado:</span> 1:00 PM - 11:30 PM</li>
+                                <li><span>Domingo:</span> 1:00 PM - 9:00 PM</li>
+                            </ul>
+                        </div>
+
+                        <div class="info-item">
+                            <h3>Reservaciones</h3>
+                            <p>Teléfono: (55) 1234-5678</p>
+                            <p>WhatsApp: (55) 8765-4321</p>
+                        </div>
+                    </div>
+
+                    <div class="ubicacion-mapa">
+                        <!-- NOTA: Reemplaza con una imagen de mapa o integra Google Maps -->
+                        <img src="images/mapa.jpg" alt="Mapa de ubicación del restaurante El Buen Sabor">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER: Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>El Buen Sabor</h3>
+                    <p>Auténtica cocina italiana desde 1900</p>
+                </div>
+
+                <div class="footer-redes">
+                    <h4>Síguenos</h4>
+                    <div class="redes-icons">
+                        <!-- NOTA: Puedes usar imágenes o íconos de Font Awesome -->
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="TikTok">TK</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 El Buen Sabor. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

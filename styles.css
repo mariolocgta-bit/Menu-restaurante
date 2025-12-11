@@ -1,0 +1,550 @@
+/* ============================================
+   ESTILOS PARA EL BUEN SABOR - RESTAURANTE
+   ============================================
+
+   ESTRUCTURA DEL ARCHIVO:
+   1. Variables CSS (colores, fuentes)
+   2. Reset y estilos base
+   3. Utilidades (container, botones)
+   4. Header y navegación
+   5. Hero
+   6. Sección Nosotros
+   7. Sección Menú
+   8. Sección Galería
+   9. Sección Ubicación
+   10. Footer
+   11. Media Queries (responsive)
+
+   ============================================ */
+
+/* ============================================
+   1. VARIABLES CSS
+   ============================================ */
+:root {
+    /* Paleta de colores - Restaurante italiano */
+    --color-primario: #8B0000;      /* Rojo vino */
+    --color-secundario: #2C5530;    /* Verde olivo */
+    --color-fondo: #FDF8F3;         /* Crema claro */
+    --color-texto: #2D2D2D;         /* Gris oscuro */
+    --color-texto-claro: #666666;   /* Gris medio */
+    --color-blanco: #FFFFFF;
+    --color-negro: #1A1A1A;
+
+    /* Tipografías */
+    --fuente-titulos: 'Playfair Display', Georgia, serif;
+    --fuente-texto: 'Lato', Arial, sans-serif;
+
+    /* Espaciados */
+    --espaciado-seccion: 80px;
+    --espaciado-contenedor: 20px;
+
+    /* Transiciones */
+    --transicion: all 0.3s ease;
+}
+
+/* ============================================
+   2. RESET Y ESTILOS BASE
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Scroll suave al hacer clic en enlaces */
+}
+
+body {
+    font-family: var(--fuente-texto);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--color-primario);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--color-secundario);
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transicion);
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ============================================
+   3. UTILIDADES
+   ============================================ */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--espaciado-contenedor);
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: var(--transicion);
+}
+
+.btn-primary {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+.btn-primary:hover {
+    background-color: #6B0000;
+    transform: translateY(-2px);
+}
+
+/* ============================================
+   4. HEADER Y NAVEGACIÓN
+   ============================================ */
+.header {
+    background-color: var(--color-blanco);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    color: var(--color-primario);
+}
+
+.nav-list {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-list a {
+    font-weight: 600;
+    color: var(--color-texto);
+    padding: 5px 0;
+    position: relative;
+}
+
+.nav-list a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primario);
+    transition: var(--transicion);
+}
+
+.nav-list a:hover::after {
+    width: 100%;
+}
+
+.nav-list a:hover {
+    color: var(--color-primario);
+}
+
+/* ============================================
+   5. HERO
+   ============================================ */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* NOTA: Cambia esta imagen por tu imagen de hero */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('images/hero.jpg') center/cover no-repeat;
+    color: var(--color-blanco);
+    padding-top: 80px; /* Espacio para el header fijo */
+}
+
+.hero-content h2 {
+    font-size: 3.5rem;
+    color: var(--color-blanco);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-slogan {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* ============================================
+   6. SECCIÓN NOSOTROS
+   ============================================ */
+.nosotros {
+    padding: var(--espaciado-seccion) 0;
+    background-color: var(--color-blanco);
+}
+
+.nosotros-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.nosotros-texto p {
+    color: var(--color-texto-claro);
+    text-align: justify;
+}
+
+.nosotros-imagen img {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   7. SECCIÓN MENÚ
+   ============================================ */
+.menu {
+    padding: var(--espaciado-seccion) 0;
+    background-color: var(--color-fondo);
+}
+
+.menu-categoria {
+    margin-bottom: 50px;
+}
+
+.menu-categoria h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-secundario);
+    display: inline-block;
+    margin: 0 auto 30px;
+    width: 100%;
+}
+
+/* FLEXBOX: Los items del menú se organizan en fila */
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: var(--color-blanco);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: var(--transicion);
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.menu-item h4 {
+    font-size: 1.2rem;
+    color: var(--color-negro);
+}
+
+.precio {
+    font-family: var(--fuente-titulos);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-primario);
+}
+
+.menu-item p {
+    color: var(--color-texto-claro);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* ============================================
+   8. SECCIÓN GALERÍA
+   ============================================ */
+.galeria {
+    padding: var(--espaciado-seccion) 0;
+    background-color: var(--color-blanco);
+}
+
+/* CSS GRID: La galería usa una cuadrícula */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: var(--transicion);
+}
+
+.galeria-grid img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   9. SECCIÓN UBICACIÓN
+   ============================================ */
+.ubicacion {
+    padding: var(--espaciado-seccion) 0;
+    background-color: var(--color-fondo);
+}
+
+.ubicacion-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.ubicacion-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.info-item h3 {
+    color: var(--color-primario);
+    margin-bottom: 10px;
+}
+
+.horarios-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.horarios-lista span {
+    font-weight: 700;
+    color: var(--color-secundario);
+}
+
+.ubicacion-mapa img {
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================================
+   10. FOOTER
+   ============================================ */
+.footer {
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-logo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.footer-redes h4 {
+    margin-bottom: 15px;
+}
+
+.redes-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: var(--color-primario);
+    border-radius: 50%;
+    font-weight: 700;
+    transition: var(--transicion);
+}
+
+.redes-icons a:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-primario);
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   11. MEDIA QUERIES (RESPONSIVE)
+   ============================================
+
+   Mobile-first: Los estilos base son para móvil.
+   Usamos min-width para agregar estilos en pantallas más grandes.
+
+   ============================================ */
+
+/* Tablets (768px en adelante) */
+@media (min-width: 768px) {
+    h2 {
+        font-size: 3rem;
+    }
+
+    /* Header: más espacio */
+    .header-container {
+        padding: 20px 40px;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    /* Hero: texto más grande */
+    .hero-content h2 {
+        font-size: 4rem;
+    }
+
+    .hero-slogan {
+        font-size: 1.8rem;
+    }
+
+    /* Nosotros: imagen y texto lado a lado */
+    .nosotros-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nosotros-texto {
+        flex: 1;
+    }
+
+    .nosotros-imagen {
+        flex: 1;
+    }
+
+    /* Menú: items en 2 columnas con Flexbox */
+    .menu-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .menu-item {
+        flex: 1 1 calc(50% - 10px);
+    }
+
+    /* Galería: 2 columnas con Grid */
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Ubicación: info y mapa lado a lado */
+    .ubicacion-content {
+        flex-direction: row;
+    }
+
+    .ubicacion-info {
+        flex: 1;
+    }
+
+    .ubicacion-mapa {
+        flex: 1;
+    }
+
+    /* Footer: contenido en fila */
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+/* Desktop (1024px en adelante) */
+@media (min-width: 1024px) {
+    /* Menú: items en 3 columnas */
+    .menu-item {
+        flex: 1 1 calc(33.333% - 14px);
+    }
+
+    /* Galería: 3 columnas */
+    .galeria-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .galeria-grid img {
+        height: 300px;
+    }
+
+    /* Ubicación: más espacio para info */
+    .ubicacion-info {
+        flex-direction: row;
+        gap: 50px;
+    }
+}
